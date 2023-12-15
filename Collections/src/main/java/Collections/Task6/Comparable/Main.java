@@ -1,9 +1,12 @@
-package Collections.Task6;
+package Collections.Task6.Comparable;
+
+import Collections.Task6.SortByAge;
+import Collections.Task6.SortByPersonalNumber;
+
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Collections.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,16 +28,12 @@ public class Main {
             System.out.println(user);
         }
 
-        Collections.sort(users, new SortByPersonalNumber());
+        Collections.sort(users);
 
         System.out.println("\nКоллекция после сортировки по персональному номеру:");
         for (User user : users) {
             System.out.println(user);
         }
-
-
-        Collections.sort(users, User.ageComparator);
-        Collections.sort(users, new SortByAge());
 
         System.out.println("\nКоллекция после сортировки по возрасту:");
         for (User user : users) {
