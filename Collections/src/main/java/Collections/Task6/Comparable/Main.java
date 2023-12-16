@@ -1,8 +1,5 @@
 package Collections.Task6.Comparable;
 
-import Collections.Task6.SortByAge;
-import Collections.Task6.SortByPersonalNumber;
-
 
 import java.util.ArrayList;
 import java.util.Collections;

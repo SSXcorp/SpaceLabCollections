@@ -10,10 +10,10 @@ public class Main {
         Map<String, String> carOwners = new HashMap<>();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Программа для учета автомобилей на парковке. Введите гос номер или введите 'СТОП' для завершения.");
+        System.out.println("Numbers app. Print СТОП to stop app.");
 
         while (true) {
-            System.out.println("Выберите команду или напишите номер авто: ");
+            System.out.println("Choose command or print auto number: ");
             String input = scanner.nextLine();
             if (input.equalsIgnoreCase("СТОП")) {
                 break;
@@ -24,37 +24,37 @@ public class Main {
             } else if (input.equalsIgnoreCase("ВЛАДЕЛЬЦЫ")) {
                 printOwners(carOwners);
             } else {
-                System.out.println("Введите владельца автомобиля: ");
+                System.out.println("Print auto owner: ");
                 String owner = scanner.nextLine();
                 addCarAndOwner(carOwners, input, owner);
             }
         }
 
-        System.out.println("Работа программы завершена.");
+        System.out.println("Program work is completed.");
     }
 
     private static void addCarAndOwner(Map<String, String> carOwners, String carNumber, String owner) {
         carOwners.put(carNumber, owner);
-        System.out.println("Автомобиль добавлен в список: " + carNumber + ", Владелец: " + owner);
+        System.out.println("Car number added: " + carNumber + ", Owner: " + owner);
     }
 
     private static void printCarOwners(Map<String, String> carOwners) {
         if (carOwners.isEmpty()) {
-            System.out.println("Список гос номеров автомобилей пуст.");
+            System.out.println("Car numbers list is empty! Add some car numbers first!.");
         } else {
-            System.out.println("Список гос номеров автомобилей и их владельцев:");
+            System.out.println("List of registered cars and owners: :");
             for (Map.Entry<String, String> entry : carOwners.entrySet()) {
-                System.out.println("Гос номер: " + entry.getKey() + ", Владелец: " + entry.getValue());
+                System.out.println("Car number: " + entry.getKey() + ", Owner: " + entry.getValue());
             }
         }
     }
 
     private static void printCarNumbers(Map<String, String> carOwners) {
         if (carOwners.isEmpty()) {
-            System.out.println("Список гос номеров автомобилей пуст.");
+            System.out.println("Car numbers list is empty!");
         }
         else {
-            System.out.println("Список гос номеров автомобилей:");
+            System.out.println("Car numbers list:");
             for (String carNumber : carOwners.keySet()) {
                 System.out.println(carNumber);
             }
@@ -63,10 +63,10 @@ public class Main {
 
     private static void printOwners(Map<String, String> carOwners) {
         if (carOwners.isEmpty()) {
-            System.out.println("Список владельцев автомобилей пуст.");
+            System.out.println("Owners list is empty");
         }
         else {
-            System.out.println("Список владельцев автомобилей:");
+            System.out.println("Owners list:");
             for (String owner : carOwners.values()) {
                 System.out.println(owner);
             }

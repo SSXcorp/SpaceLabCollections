@@ -1,11 +1,12 @@
 package Collections.Task1;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> carNumbers = new ArrayList<>();
+        List<String> carNumbers = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Car parking program: ");
@@ -28,12 +29,12 @@ public class Main {
         System.out.println("The program was finished successfully!");
     }
 
-    private static void addCarNumber(ArrayList<String> carNumbers, String carNumber) {
+    private static void addCarNumber(List<String> carNumbers, String carNumber) {
         carNumbers.add(carNumber);
         System.out.println("Car number added: " + carNumber);
     }
 
-    private static void printCarNumbers(ArrayList<String> carNumbers) {
+    private static void printCarNumbers(List<String> carNumbers) {
         if (carNumbers.isEmpty()) {
             System.out.println("Car numbers list is empty! Add some car numbers first!");
         } else {

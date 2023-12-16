@@ -1,4 +1,4 @@
-package Collections.Task6;
+package Collections.Task6.Comparator;
 
 import java.util.Comparator;
 

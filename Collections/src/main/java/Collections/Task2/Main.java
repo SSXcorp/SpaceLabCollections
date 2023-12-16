@@ -1,4 +1,6 @@
 package Collections.Task2;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -23,6 +25,7 @@ public class Main {
         }
 
         System.out.println("The program was finished successfully!");
+
     }
 
 }

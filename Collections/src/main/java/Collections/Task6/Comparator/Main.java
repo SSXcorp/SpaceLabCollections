@@ -1,9 +1,8 @@
-package Collections.Task6;
+package Collections.Task6.Comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Collections.*;
 
 public class Main {
     public static void main(String[] args) {

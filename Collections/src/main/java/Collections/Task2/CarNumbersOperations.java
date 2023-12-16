@@ -1,11 +1,12 @@
 package Collections.Task2;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 public class CarNumbersOperations {
 
-    LinkedList<String> carNumbers = new LinkedList<>();
+    LinkedList<String> carNumbers = new LinkedList<>(); // Cannot be replaced
 
     public void printCarNumbers() {
         if (carNumbers.isEmpty()) {
